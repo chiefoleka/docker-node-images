@@ -1,4 +1,4 @@
-FROM node:24.22.1-bookworm-slim
+FROM node:24.22-bookworm-slim
 
 ENV PORT=80
 WORKDIR /app
