@@ -5,6 +5,7 @@ WORKDIR /app
 EXPOSE 80
 
 RUN apt update && apt upgrade -y && apt install -y --no-install-recommends \
-    build-essential \
     curl \
  && rm -rf /var/lib/apt/lists/*
+
+RUN npm install -g npm@latest && npm cache clean --force
